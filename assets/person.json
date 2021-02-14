@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "sabih",
+    "age" : "23",
+    "height" : "5 foot 8 inch",
+    "gender" : "male",
+    "hair_color" : "black"
+  },
+  {
+    "name" : "Jaffry",
+    "age" : "40",
+    "height" : "6 foot 1 inch",
+    "gender" : "male",
+    "hair_color" : "black"
+  },
+  {
+    "name" : "Jaweria",
+    "age" : "14",
+    "height" : "4 foot 5 inch",
+    "gender" : "female",
+    "hair_color" : "white"
+  },
+  {
+    "name" : "Wali",
+    "age" : "40",
+    "height" : "6 foot 1 inch",
+    "gender" : "male",
+    "hair_color" : "black"
+  }
+]

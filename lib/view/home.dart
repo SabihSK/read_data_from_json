@@ -20,18 +20,20 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Container(
           child: FutureBuilder(
-            future: DefaultAssetBundle.of(context)
-                .loadString("loadjson/person.json"),
-            // initialData: InitialData,
-            builder: (BuildContext context, AsyncSnapshot snapshot) {
-              var mydata = JsonDecoder().convert(snapshot.data.toString());
+            future:
+                DefaultAssetBundle.of(context).loadString("assets/person.json"),
+            builder: (context, snapshot) {
+              var mydata = json.decode(snapshot.data.toString());
               return ListView.builder(
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Text("Name: " + mydata[index]["name"]),
+                        Text("Name: " +
+                            (mydata[index]["name"] != null
+                                ? mydata[index]["name"]
+                                : '')),
                         Text("Age: " + mydata[index]["age"]),
                         Text("Height: " + mydata[index]["height"]),
                         Text("Gender: " + mydata[index]["gender"]),
